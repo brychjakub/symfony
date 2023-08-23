@@ -2,15 +2,32 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <title>{% block title %}Contact{% endblock %}</title>
+        <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
         {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
         {% endblock %}
-
         {% block javascripts %}
         {% endblock %}
     </head>
     <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ path('home') }}">Home</a></li>
+                <li><a href="{{ path('projects') }}">Projects</a></li>
+                <li><a href="{{ path('contact') }}">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
         {% block body %}{% endblock %}
+    <footer>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/brychjakub" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/brychjakub" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.strava.com/athletes/69415027" target="_blank" rel="noopener noreferrer">Strava</a></li>
+        </ul>
+    </footer>
     </body>
 </html>

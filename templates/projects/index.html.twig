@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Projects{% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+<div class="wrapper">
+ <a href="{{ path('game') }}">
+        <img class="picture2" src="{{ asset('images/game.png') }}" alt="Picture">
+        </a>
+</div>
+<div class="wrapper">
+
+        <a href="{{ path('portfolio') }}">
+        <img class="picture2" src="{{ asset('images/working.png') }}" alt="Picture">
+        </a>
+   </div>
+     
+
+</div>
+{% endblock %}

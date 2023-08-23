@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+<div class="container">
+<center>
+
+<h2>Contact</h2>
+<div class="typewriter">
+<h4 class="line1">Po zadání údajů mi příjde email na osobní účet přes nově vytvořený g-mail účet.</h4>
+</div>
+<br>
+{{ form_start(form) }}
+    {{ form_row(form.name) }}
+    <br>
+
+    {{ form_row(form.email) }}
+    <br>
+
+    {{ form_row(form.message) }}
+    <br>
+
+    {{ form_row(form.send) }}
+{{ form_end(form) }}
+</center>
+
+</div>
+{% endblock %}
